@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c1"
+    tools:context=".Shelter.S_AdoptionFragment">
+
+    <Button
+        android:id="@+id/btnadoption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/c2"
+        android:textColor="@color/c3"
+        app:strokeColor="@color/c3"
+        android:textStyle="bold"
+        app:strokeWidth="3dp"
+        android:layout_margin="15dp"
+        android:text="Add New Adoption Pet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/viewpager_bkg3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/s_adoption_search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Pet by name"
+            android:padding="10dp"
+            android:drawableStart="@drawable/search"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="16dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/s_adoption_recyclerShelters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

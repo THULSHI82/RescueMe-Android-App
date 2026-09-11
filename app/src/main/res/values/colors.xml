@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c1">#FFCE00</color>
+    <color name="c2">#FF000000</color>
+    <color name="c3">#FFFFFFFF</color>
+    <color name="c4">#d8d8d8</color>
+    <color name="c5">#efefef</color>
+    <color name="c6">#E90D0D</color>
+
+
+    <color name="status_pending">#FFA500</color>
+    <color name="status_approved">#4CAF50</color>
+    <color name="status_rejected">#F44336</color>
+    <color name="status_completed">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+</resources>

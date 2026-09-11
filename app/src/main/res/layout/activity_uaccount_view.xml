@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c1"
+    tools:context=".User.U_Account_View">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Detelis "
+                    android:textColor="@color/c2"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/edittext_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user_add" />
+
+                <TextView
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/contact"
+                    android:drawablePadding="10dp"
+                    android:hint="Contact"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/calender"
+                    android:drawablePadding="10dp"
+                    android:focusable="false"
+                    android:hint="Date of Birth"
+                    android:inputType="none"
+                    android:padding="10dp" />
+
+
+                <TextView
+                    android:id="@+id/etgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/age"
+                    android:drawablePadding="10dp"
+                    android:focusable="false"
+                    android:hint="Gender"
+                    android:inputType="none"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/btnEditUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/c2"
+                    android:textColor="@color/c3"
+                    app:strokeColor="@color/c3"
+                    android:textStyle="bold"
+                    app:strokeWidth="3dp"
+                    android:text="Edit User" />
+
+                <Button
+                    android:id="@+id/btndeleteUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/c6"
+                    android:textColor="@color/c3"
+                    app:strokeColor="@color/c3"
+                    android:textStyle="bold"
+                    app:strokeWidth="3dp"
+                    android:text="Delete User" />
+
+
+               </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

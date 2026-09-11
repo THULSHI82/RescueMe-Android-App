@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".User.U_ContactUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end"
+            android:contentDescription="App Logo"
+            app:srcCompat="@drawable/logo1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@drawable/viewpager_bkg"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us "
+                android:textColor="@color/c2"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <EditText
+                android:id="@+id/etuName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="User Name"
+                android:inputType="text"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/etucontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/contact"
+                android:drawablePadding="10dp"
+                android:hint="Contact Number"
+                android:inputType="number"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/etmessage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="12dp"
+                android:minLines="3"
+                android:gravity="top|start"
+                android:background="@drawable/edittext_bg"
+                android:drawablePadding="10dp"
+                android:hint="Message"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+
+            <Button
+                android:id="@+id/btnusubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/c2"
+                android:textColor="@color/c3"
+                android:textStyle="bold"
+                android:text="Submit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

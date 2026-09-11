@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c1"
+    tools:context=".Admin.PromotionsFragment">
+    <Button
+        android:id="@+id/btnaddprom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/c2"
+        android:textColor="@color/c3"
+        app:strokeColor="@color/c3"
+        android:textStyle="bold"
+        app:strokeWidth="3dp"
+        android:layout_margin="15dp"
+        android:text="Add New promotions" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/viewpager_bkg3"
+        android:orientation="vertical">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/a_promorecyclerShelters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

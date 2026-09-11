@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c1"
+    tools:context=".Shelter.S_AccountFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shelter "
+                    android:textColor="@color/c2"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/edittext_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_image" />
+
+                <TextView
+                    android:id="@+id/etsname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/shelter"
+                    android:drawablePadding="10dp"
+                    android:text="Shelter Name"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etsoname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:text="Shelter Owner Name"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etsemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:text="Email"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etscontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/contact"
+                    android:drawablePadding="10dp"
+                    android:text="Contact"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etrnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/rnumber"
+                    android:drawablePadding="10dp"
+                    android:text="Registration Number"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/calender"
+                    android:drawablePadding="10dp"
+                    android:text="Established Date"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/shelter"
+                    android:drawablePadding="10dp"
+                    android:text="Description"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/btnedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="@color/c2"
+                    android:textColor="@color/c3"
+                    app:strokeColor="@color/c3"
+                    android:textStyle="bold"
+                    app:strokeWidth="3dp"
+                    android:text="Edit" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>

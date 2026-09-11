@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/c1"
+    android:padding="3dp"
+    tools:context=".Admin.A_ShelterFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_bkg"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/c2"
+            android:layout_marginLeft="5dp"
+            android:text="Add New Shelter" />
+
+        <Button
+        android:id="@+id/btnaddshelter"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/c2"
+        android:textColor="@color/c3"
+        app:strokeColor="@color/c3"
+        android:textStyle="bold"
+        app:strokeWidth="3dp"
+        android:layout_marginLeft="140dp"
+        android:text="Add " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/edittext_bkg"
+        android:padding="2dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/c2"
+            android:layout_marginLeft="5dp"
+            android:text="View Shelters In Map" />
+
+        <Button
+            android:id="@+id/btnviewmap"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/c2"
+            android:textColor="@color/c3"
+            app:strokeColor="@color/c3"
+            android:textStyle="bold"
+            app:strokeWidth="3dp"
+            android:layout_marginLeft="100dp"
+            android:text="View" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="140dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/viewpager_bkg3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search shelter by name"
+            android:padding="10dp"
+            android:drawableStart="@drawable/search"
+            android:background="@drawable/edittext_bg"
+            android:layout_margin="16dp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerShelters"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

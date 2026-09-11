@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".User.paymentgetway">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Payment Method"
+            android:padding="30dp"
+            android:textColor="@color/c2"
+            android:layout_marginTop="-25dp"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="30dp"
+            android:gravity="center"
+            android:textColor="@color/c2"
+            android:layout_marginTop="-30dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Card information"
+            android:padding="30dp"
+            android:textColor="@color/c2"
+            android:layout_marginTop="-30dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/etFname"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Card Number"
+            android:drawableEnd="@drawable/email"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="168dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="MM/YY "
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/etcvv"
+                android:layout_width="168dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/edittext_bg"
+                android:hint="CVV"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:padding="10dp" />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCname"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Cardholder Name"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+
+            android:text="I agree to Terms and Condition" />
+
+        <Button
+            android:id="@+id/btnpayment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/c2"
+            android:textColor="@color/c3"
+            app:strokeColor="@color/c3"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:strokeWidth="3dp"
+            android:text="Pay Now" />
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
+

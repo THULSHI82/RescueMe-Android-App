@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".Admin.A_SContactFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="720dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/viewpager_bkg3"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/c2"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Shelter Message" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/a_sheltermessagerecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:padding="8dp"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/c1"
+    tools:context=".User.AboutUs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@color/c2"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/c2"
+                android:textSize="16sp"
+                android:lineSpacingExtra="4dp"
+                android:textAlignment="center"
+                android:text="RescueMe is a compassionate initiative dedicated to rescuing, sheltering, and rehoming stray and abandoned animals in Sri Lanka. Our mission is to create a safer, kinder world for helpless animals.\n\nThrough our app, users can adopt pets, make donations, report lost animals, and connect with nearby shelters. With your support, we strive to reduce animal suffering and raise awareness about responsible pet care.\n\nJoin us in making a difference—one paw at a time!" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="348dp"
+                android:layout_height="273dp"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/d3" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

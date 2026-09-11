@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RescueMe1"
+        tools:targetApi="31">
+        <activity
+            android:name=".User.VetserviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddPromotions"
+            android:exported="false"
+            android:requestLegacyExternalStorage="true" />
+
+        <receiver
+            android:name=".User.ReminderReceiver"
+            android:exported="false" />
+
+        <activity
+            android:name=".Shelter.S_Reservation_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Reservation_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Reservation_view"
+            android:exported="false" />
+        <activity
+            android:name=".User.ReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_Report_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".User.Myreport"
+            android:exported="false" />
+        <activity
+            android:name=".User.AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".User.ShelterviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.A_ShelterMessage_Viewmore"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.A_UserMessageViewmore"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Edit_User"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Account_View"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.A_User_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_Appoiment_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Report"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Messages"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_EditShelter"
+            android:exported="false" />
+        <activity
+            android:name=".User.paymentgetway"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_EdditAppoinmet"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Appoinmet_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Appoiment_view"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.A_Pet_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.A_Adoption_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_Adoption_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_Adoption_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.Add_Adoption_Pet"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_Appoinment"
+            android:exported="false" />
+        <activity
+            android:name=".User.U_PetViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_Pet_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.S_Pet_ViewMore"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.Add_New_Pet"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.Shelter_header"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.EditShelter"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ViewShelter"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ShelterMap"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddNewShelter"
+            android:exported="false" />
+        <activity
+            android:name=".Shelter.Shelter"
+            android:exported="false" />
+        <activity
+            android:name=".User.User"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Admin.Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Opening.Login"
+            android:exported="false" />
+        <activity
+            android:name=".Opening.Singup"
+            android:exported="false" />
+        <activity
+            android:name=".Opening.Welcome"
+            android:exported="false" />
+        <activity
+            android:name=".Opening.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Opening.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_api_key" />
+    </application>
+
+</manifest>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".User.Myreport">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Report Pet's"
+            android:textColor="@color/c2"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/imgpetReport"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/edittext_bg"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_pet"
+            android:contentDescription="Pet profile picture" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Select Pet Category">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/petcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:simpleItems="@array/petcategory"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/category"
+                android:drawablePadding="10dp"
+                android:padding="10dp"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="Select Shelter">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/spinnerPetId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="none"
+                android:cursorVisible="false"
+                android:clickable="true"
+                android:longClickable="false"
+                android:background="@drawable/edittext_bg"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minLines="3"
+            android:gravity="top|start"
+            android:background="@drawable/edittext_bg"
+            android:drawableStart="@drawable/description_alt"
+            android:drawablePadding="10dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:padding="10dp" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/branchMap"
+            android:layout_width="387dp"
+            android:layout_height="204dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionBox" />
+
+        <Button
+            android:id="@+id/btnreport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/c2"
+            android:textColor="@color/c3"
+            android:textStyle="bold"
+            android:text="Report Pet" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

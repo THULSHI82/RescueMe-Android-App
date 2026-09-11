@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    tools:context=".Admin.AddPromotions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="end"
+            android:contentDescription="App Logo"
+            app:srcCompat="@drawable/logo1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/viewpager_bkg"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add New promotions"
+                android:textColor="@color/c2"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/imgpetProfile"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/edittext_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/promo"
+                android:contentDescription="Pet profile picture" />
+
+            <EditText
+                android:id="@+id/ettitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/topic"
+                android:drawablePadding="10dp"
+                android:hint="Enter Title"
+                android:inputType="text"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/btnpromo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:backgroundTint="@color/c2"
+                android:textColor="@color/c3"
+                android:textStyle="bold"
+                android:text="Add promotions" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

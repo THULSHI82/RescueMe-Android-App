@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_container"
+    android:background="@color/c1"
+    tools:context=".User.PetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="710dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:outlineSpotShadowColor="@color/c2"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/tvsearch"
+                android:layout_width="285dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_bg"
+                android:drawableStart="@drawable/search"
+                android:drawablePadding="10dp"
+                android:hint="Search by name or category"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:inputType="text"
+                android:imeOptions="actionSearch"/>
+
+            <ImageView
+                android:id="@+id/imgbell2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/promo" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:background="@drawable/viewpager_bkg3">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/s_userrecyclerShelters"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:clipToPadding="false" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

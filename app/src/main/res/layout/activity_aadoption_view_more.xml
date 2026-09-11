@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/c1"
+    android:orientation="vertical"
+    tools:context=".Admin.A_Adoption_ViewMore">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:outlineSpotShadowColor="@color/c2"
+        android:background="@drawable/viewpager_bkg"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adoption"
+                    android:textColor="@color/c2"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet ID :"
+                    android:textColor="@color/c2"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="start"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/tvpetid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/id"
+                    android:text="Category"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pet Details"
+                    android:textColor="@color/c2"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imgpetProfile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/edittext_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_pet"
+                    android:contentDescription="Pet Profile Image" />
+
+                <TextView
+                    android:id="@+id/tvpetcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/category"
+                    android:text="Category"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/tvpetname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/pet_name"
+                    android:text="Pet Name"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/tvpetage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/age"
+                    android:text="Pet Age"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/tvpetgender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/pet"
+                    android:text="Pet Gender"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:id="@+id/tvpetdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/description_alt"
+                    android:inputType="textMultiLine"
+                    android:text="Description"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adopters Details"
+                    android:textColor="@color/c2"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:id="@+id/imgadoptionphoto"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/edittext_bg"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pet_owner"
+                    android:contentDescription="Adopter Photo" />
+
+                <TextView
+                    android:id="@+id/etadoptionName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:hint="Full Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etadoptionage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/age"
+                    android:drawablePadding="10dp"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Select gender" />
+
+                <RadioGroup
+                    android:id="@+id/rgadoptionGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/edittext_bg"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/etadoptioncontact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/contact"
+                    android:drawablePadding="10dp"
+                    android:hint="Contact"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etadoptionnic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/nic"
+                    android:drawablePadding="10dp"
+                    android:hint="National Identity Card Number"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etadoptionaddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:hint="Address"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/etadoptiondate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edittext_bg"
+                    android:drawableStart="@drawable/calender"
+                    android:drawablePadding="10dp"
+                    android:focusable="false"
+                    android:hint="Adoption Date"
+                    android:inputType="date"
+                    android:padding="10dp" />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
